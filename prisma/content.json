@@ -1,0 +1,382 @@
+{
+  "editions": [
+    {
+      "year": 2026,
+      "name": "Porão na Roda 2026",
+      "current": true
+    },
+    {
+      "year": 2025,
+      "name": "Porão na Roda 2025",
+      "current": false
+    }
+  ],
+  "speakers": [
+    {
+      "name": "Ricardo Rodrigues",
+      "slug": "ricardo-rodrigues",
+      "years": [
+        2026
+      ],
+      "photoUrl": "/uploads/2026/06/LETS_GIG_IMERSAO_RETRATOS_SOCIOS-14-1-e1781542908412.jpg",
+      "bio": "Empresário, Agente e Produtor Cultural, graduado no curso de Imagem e Som na UFSCar e com MBA em Gestão de Negócios pela ESALQ/USP. É sócio-fundador e Gestor de Oportunidades da Let’s GIG – Booking & Music Services, onde atua no agenciamento de diversos artistas. Responsável pelo serviço de internacionalização, esteve presente em conferências de música como o SXSW, WOMEX, Reeperbahn, entre outras."
+    },
+    {
+      "name": "Dani Pepper",
+      "slug": "dani-pepper",
+      "years": [
+        2026
+      ],
+      "photoUrl": "/uploads/2026/06/Dani-Pepper--scaled-e1781547726363.jpeg",
+      "bio": "Dani Pepper é empresária, curadora, comunicadora e gestora de carreiras no mercado da música. Vice-presidente da K2L e fundadora do selo e escritório de assessoria musical Urban Pop, atua com foco em estratégia de carreira, planejamento de investimento e desenvolvendo o repertório dos artistas. Dani se destacou no mercado da música, impulsionando artistas da cena urbana de forma independente, sempre com uma escuta atenta e olhar crítico sobre os caminhos da indústria."
+    },
+    {
+      "name": "Daniela Souza",
+      "slug": "daniela-souza",
+      "years": [
+        2026
+      ],
+      "photoUrl": "/uploads/2026/06/Daniela-Souza-scaled-e1781549542199.jpg",
+      "bio": "Gerente do escritório da UBC em Minas Gerais, desde 2000, sendo também responsável pelo atendimento dos artistas do Espírito Santo. Jornalista com especialização em Propriedade Intelectual pelo CEAJUFE, História da Arte pelo Ateliê ARTEMINAS e pós-graduanda em Semiótica e Análise do Discurso pela Faculdade Metropolitana. Apresentadora do podcast Papo do Quintal."
+    },
+    {
+      "name": "Henrique Andrade",
+      "slug": "henrique-andrade",
+      "years": [
+        2026
+      ],
+      "photoUrl": "/uploads/2026/06/Henrique-Andrade-Retrato-2026-scaled-e1781548188888.jpg",
+      "bio": "Produtor, compositor e engenheiro de áudio vencedor de 3 Grammys (incluindo Álbum do Ano por Cowboy Carter, de Beyoncé), Henrique Andrade iniciou sua trajetória na cena de Brasília antes de consolidar 16 anos de carreira em Los Angeles. Com base no lendário Record Plant, colaborou com astros como Justin Bieber e Bad Bunny. Une a Arquitetura de Produção à sensibilidade, conectando Hollywood ao Brasil."
+    },
+    {
+      "name": "João Mancha",
+      "slug": "joao-mancha",
+      "years": [
+        2026
+      ],
+      "photoUrl": "/uploads/2026/06/Joao-Mancha-e1781549018313.jpeg",
+      "bio": "João Mancha é produtor cultural, baterista, palestrante, escritor e articulador social. Fundador do Convergência Social e diretor do Setorial Cultura Rock, atua há mais de uma década no fortalecimento da cadeia produtiva do rock, da economia criativa e da participação social. Homenageado pela CLDF e embaixador dos artistas pela CBTur, desenvolve projetos de impacto sociocultural e inovação."
+    },
+    {
+      "name": "Mário Di Poi",
+      "slug": "mario-di-poi",
+      "years": [
+        2026
+      ],
+      "photoUrl": "/uploads/2026/06/Mario-Di-Poi-@Rafael-Benvenuti--scaled-e1781549674942.jpg",
+      "bio": "Mário Di Poi é music supervisor, produtor de áudio e cofundador da INPUT POST. Presidente da Guild of Music Supervisors Brasil (GMS Brasil) e mentor do SXSW, atua há mais de 25 anos na indústria audiovisual. Participou de projetos para Netflix, Disney+, HBO, Amazon e Apple TV+, conectando artistas, selos e produtoras ao mercado global de sincronização musical."
+    },
+    {
+      "name": "Dani Ribas",
+      "slug": "dani-ribas",
+      "years": [
+        2025
+      ],
+      "photoUrl": "/uploads/2025/05/2ci3zb7gx7g.png",
+      "bio": "Com 25 anos de atuação no setor criativo e referência em estratégias para o mercado musical, Dani é especialista em tendências do mercado musical, tecnologia, IA, streaming, direitos autorais e gestão de carreiras. À frente da Sonar Cultural Consultoria, prepara estrategicamente artistas e profissionais para um cenário musical em constante transformação."
+    },
+    {
+      "name": "Anita Carvalho",
+      "slug": "anita-carvalho",
+      "years": [
+        2025
+      ],
+      "photoUrl": "/uploads/2025/05/r35ax9fahg.png",
+      "bio": "Com 28 anos de atuação, é referência em gestão de carreiras e planejamento estratégico para artistas. Doutoranda em Economia Criativa/ESPM e founder da Music Rio Academy, foi responsável por trajetórias de Diogo Nogueira e Beth Carvalho. É consultora, pesquisadora e professora, com experiência em +1000 espetáculos, turnês e projetos culturais."
+    },
+    {
+      "name": "Marina Mattoso",
+      "slug": "marina-mattoso",
+      "years": [
+        2025
+      ],
+      "photoUrl": "/uploads/2025/05/vgzc1xlrku.png",
+      "bio": "Mais de 10 anos de experiência em comunicação digital no mercado musical, já atuou com Gilberto Gil, Anitta e Jorge Aragão. É CEO da Jangada Comunicação, agência voltada para o entretenimento, e coordena o curso de Marketing Digital para Artistas na Music Rio Academy. É professora na PUC-Rio e Estácio, colunista do portal Mundo da Música e presença constante em grandes eventos."
+    },
+    {
+      "name": "Arthur Fitzgibbon",
+      "slug": "arthur-fitzgibbon",
+      "years": [
+        2025
+      ],
+      "photoUrl": "/uploads/2025/05/tzzevfxqy6.png",
+      "bio": "Presidente e Sócio da ONErpm, founder da Thurbo Music e com sólida trajetória em gravadoras como Universal Music, Abril Music e EMI, além da sua atuação como empresário de artistas, produtor executivo, radialista e executivo do setor desde 1994. Professor e palestrante em Marketing e Music Business desde 2007, segue contribuindo com universidades e eventos da indústria."
+    },
+    {
+      "name": "Guta Braga",
+      "slug": "guta-braga",
+      "years": [
+        2025
+      ],
+      "photoUrl": "/uploads/2025/05/9r3sy8c37xu.png",
+      "bio": "Com quase 30 anos de experiência, é uma das maiores especialistas na interseção entre música, direitos autorais e tecnologia. Atuou na Sony, Universal, Napster, Backoffice, Laboratório Fantasma e hoje presta consultoria estratégica para artistas, selos e marcas como RedBull. Guta é presença constante em festivais e mentorias no mundo."
+    }
+  ],
+  "lectures": [
+    {
+      "year": 2026,
+      "slug": "sala01",
+      "order": 1,
+      "date": "2026-06-30",
+      "dateLabel": "30|06",
+      "time": "19:00",
+      "endLabel": "21h",
+      "title": "Internacionalização — o que você pode fazer antes de sair de casa",
+      "speakers": [
+        "ricardo-rodrigues"
+      ],
+      "liveUrl": "https://us02web.zoom.us/j/85201587800",
+      "description": "Palestra sobre estratégias de internacionalização na música, abordando preparação de carreira, circulação internacional, construção de redes, planejamento estratégico e adaptação a diferentes mercados e territórios. A atividade apresenta caminhos possíveis para artistas e profissionais de diferentes estilos e tamanhos de carreira ampliarem sua atuação no cenário global.",
+      "recordingUrl": null,
+      "materials": []
+    },
+    {
+      "year": 2026,
+      "slug": "sala02",
+      "order": 2,
+      "date": "2026-07-01",
+      "dateLabel": "01|07",
+      "time": "19:00",
+      "endLabel": "21h",
+      "title": "DNA artístico",
+      "speakers": [
+        "dani-pepper"
+      ],
+      "liveUrl": "https://us02web.zoom.us/j/89161661956",
+      "description": "O DNA Artístico é um método de construção de identidade artística desenvolvido por Dani Pepper com base em mais de 10 anos gerindo e mentorando carreiras de artistas independentes. Estruturado em dois pilares — Moodboard Artístico e Guia de Playlist Musical — o método ensina o artista a se enxergar de fora, definir seu universo visual e sonoro e tomar decisões de carreira com clareza e consistência.",
+      "recordingUrl": null,
+      "materials": []
+    },
+    {
+      "year": 2026,
+      "slug": "sala03",
+      "order": 3,
+      "date": "2026-07-02",
+      "dateLabel": "02|07",
+      "time": "14:00",
+      "endLabel": "16h",
+      "title": "Música, Streaming e Direitos Autorais: como transformar suas execuções em rendimentos",
+      "speakers": [
+        "daniela-souza"
+      ],
+      "liveUrl": "https://us02web.zoom.us/j/87052073100",
+      "description": "A evolução do mercado musical na era do streaming e seus impactos na remuneração dos artistas e titulares da música. Direitos autorais e conexos, execução pública, gestão coletiva, Ecad, UBC, ISRC, audiovisual e plataformas digitais. Como identificar oportunidades de arrecadação e como proteger obras em um cenário de transformação tecnológica?",
+      "recordingUrl": null,
+      "materials": []
+    },
+    {
+      "year": 2026,
+      "slug": "sala04",
+      "order": 4,
+      "date": "2026-07-02",
+      "dateLabel": "02|07",
+      "time": "19:00",
+      "endLabel": "21h",
+      "title": "Arquitetura de Produção e o Padrão Global",
+      "speakers": [
+        "henrique-andrade"
+      ],
+      "liveUrl": "https://us02web.zoom.us/j/87052073100",
+      "description": "O conteúdo aborda o Mindset Record Plant, focando no fluxo de trabalho de elite de LA e na engenharia invisível. Em seguida, desmistifica a Arquitetura de Produção por meio do design de som e do estudo de caso de Cowboy Carter. A terceira etapa foca em mixagem com propósito e no padrão internacional da ponte Brasil-EUA, finalizando com estratégias de carreira, mercado e um bloco de Q&A.",
+      "recordingUrl": null,
+      "materials": []
+    },
+    {
+      "year": 2026,
+      "slug": "sala05",
+      "order": 5,
+      "date": "2026-07-03",
+      "dateLabel": "03|07",
+      "time": "14:00",
+      "endLabel": "16h",
+      "title": "Políticas Culturais no Rock e Organização do Setor",
+      "speakers": [
+        "joao-mancha"
+      ],
+      "liveUrl": "https://us02web.zoom.us/j/84690101700",
+      "description": "A oficina propõe uma reflexão prática e estratégica sobre a organização coletiva do Rock como cultura, patrimônio e vetor de desenvolvimento. Aborda participação social, políticas culturais, economia criativa, editais, fomento e articulação em redes. Compartilha experiências do Setorial Cultura Rock do DF e de articulações nacionais, apresentando caminhos para mobilização, profissionalização e fortalecimento da cena independente.",
+      "recordingUrl": null,
+      "materials": []
+    },
+    {
+      "year": 2026,
+      "slug": "sala06",
+      "order": 6,
+      "date": "2026-07-03",
+      "dateLabel": "03|07",
+      "time": "19:00",
+      "endLabel": "21h",
+      "title": "Além dos Palcos: novas receitas para artistas e selos independentes",
+      "speakers": [
+        "mario-di-poi"
+      ],
+      "liveUrl": "https://us02web.zoom.us/j/84690101700",
+      "description": "O mercado da música oferece oportunidades que vão muito além das plataformas de streaming. Nesta masterclass, artistas, bandas, selos e gestores conhecerão os caminhos da sincronização musical para cinema, séries, publicidade, games e conteúdo digital. A atividade abordará estratégias para preparar catálogos, apresentar músicas ao mercado, compreender direitos autorais e ampliar oportunidades de geração de receita no Brasil e no exterior.",
+      "recordingUrl": null,
+      "materials": []
+    },
+    {
+      "year": 2025,
+      "slug": "remuneracao-no-streaming-2025",
+      "order": 1,
+      "date": "2025-05-12",
+      "dateLabel": "12/05",
+      "time": "19:30",
+      "endLabel": "21h30",
+      "title": "Remuneração no Streaming",
+      "speakers": [
+        "dani-ribas"
+      ],
+      "liveUrl": "https://us02web.zoom.us/j/84202954411",
+      "description": "Desde a chegada do streaming no universo da música, o consumo de música e as formas de remuneração de direitos autorais mudaram muito. Nesta palestra, Dani Ribas apresenta as formas de remuneração no streaming no Brasil, os intermediários, os percentuais e as fontes pagadoras. Dani utiliza um fluxograma de sua autoria com o desenho da cadeia do streaming no Brasil.",
+      "recordingUrl": null,
+      "materials": []
+    },
+    {
+      "year": 2025,
+      "slug": "gestao-de-carreira-e-planejamento-estrategico-2025",
+      "order": 2,
+      "date": "2025-05-13",
+      "dateLabel": "13/05",
+      "time": "19:30",
+      "endLabel": "21h30",
+      "title": "Gestão de Carreira e Planejamento Estratégico",
+      "speakers": [
+        "anita-carvalho"
+      ],
+      "liveUrl": "https://us02web.zoom.us/j/89527879945",
+      "description": "Nessa aula, Anita Carvalho apresenta uma metodologia de planejamento estratégico voltada para carreiras artísticas, aplicando ao entretenimento ferramentas comumente usadas na gestão tradicional de empresas. Durante essa imersão, o método será apresentado através de um exercício prático com os alunos da construção ao vivo de um planejamento estratégico.",
+      "recordingUrl": null,
+      "materials": []
+    },
+    {
+      "year": 2025,
+      "slug": "marketing-digital-para-artistas-2025",
+      "order": 3,
+      "date": "2025-05-14",
+      "dateLabel": "14/05",
+      "time": "19:30",
+      "endLabel": "21h30",
+      "title": "Marketing Digital para Artistas",
+      "speakers": [
+        "marina-mattoso"
+      ],
+      "liveUrl": "https://us02web.zoom.us/j/81455788358",
+      "description": "Aprenda a usar as ferramentas certas para se destacar online e conquistar seu público. Nesta aula, você vai entender como segmentar sua audiência, criar um planejamento estratégico eficiente, usar dados a seu favor, produzir conteúdo relevante, lançar seus trabalhos com impacto e aproveitar ao máximo as redes sociais e plataformas de streaming.",
+      "recordingUrl": null,
+      "materials": []
+    },
+    {
+      "year": 2025,
+      "slug": "carreira-sustentavel-na-musica-independente-2025",
+      "order": 4,
+      "date": "2025-05-15",
+      "dateLabel": "15/05",
+      "time": "19:30",
+      "endLabel": "21h30",
+      "title": "Carreira Sustentável na Música Independente",
+      "speakers": [
+        "arthur-fitzgibbon"
+      ],
+      "liveUrl": "https://us02web.zoom.us/j/84425304360",
+      "description": "Descubra os caminhos para uma trajetória sólida como artista independente. Nesta aula, você vai entender o mercado da música no Brasil e no mundo, fortalecer sua identidade artística, planejar cada etapa da carreira, explorar novas fontes de renda e aprender como se conectar com as oportunidades certas — de editais a grandes eventos do setor.",
+      "recordingUrl": null,
+      "materials": []
+    },
+    {
+      "year": 2025,
+      "slug": "direito-autoral-na-era-digital-2025",
+      "order": 5,
+      "date": "2025-05-16",
+      "dateLabel": "16/05",
+      "time": "19:30",
+      "endLabel": "21h30",
+      "title": "Direito Autoral na Era Digital",
+      "speakers": [
+        "guta-braga"
+      ],
+      "liveUrl": "https://us02web.zoom.us/j/89623940307",
+      "description": "A aula explora os direitos autorais de obras musicais no ambiente digital, abordando licenciamento para plataformas, uso de músicas em redes sociais, streaming, remix, inteligência artificial e os novos modelos de remuneração. Inclui análise de casos práticos e tendências jurídicas no Brasil e no mundo.",
+      "recordingUrl": null,
+      "materials": []
+    }
+  ],
+  "quizzes": [],
+  "faq": [
+    {
+      "group": null,
+      "question": "O curso é pago?",
+      "answer": "Não há nenhum custo para participar. O Porão na Roda é gratuito do começo ao fim."
+    },
+    {
+      "group": null,
+      "question": "O curso será gravado? Posso assistir depois?",
+      "answer": "O curso é síncrono (ao vivo), mas algumas aulas estarão disponibilizadas para revisão posteriormente, aqui mesmo na sala de cada palestra."
+    },
+    {
+      "group": null,
+      "question": "Vai ter certificado?",
+      "answer": "Sim. Os participantes que assistirem às aulas e cumprirem os requisitos mínimos (como presença) receberão um certificado digital de participação."
+    },
+    {
+      "group": null,
+      "question": "Preciso ter experiência prévia na área musical?",
+      "answer": "Não! O curso é voltado tanto para quem já atua no mercado quanto para quem está começando agora."
+    },
+    {
+      "group": null,
+      "question": "Qual a duração do curso?",
+      "answer": "As aulas acontecem ao longo de alguns dias, com encontros de aproximadamente 2 horas cada."
+    },
+    {
+      "group": null,
+      "question": "Como faço para assistir às aulas?",
+      "answer": "Basta criar seu cadastro gratuito e fazer login. No horário da aula, acesse a sala da palestra pela programação — a transmissão abre direto na página."
+    },
+    {
+      "group": null,
+      "question": "Como compartilhar minha tela?",
+      "answer": "Durante a transmissão, use o botão “Compartilhar tela” do próprio Zoom. O compartilhamento precisa ser liberado pela organização."
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Festival Porão do Rock",
+      "group": "realizacao",
+      "logoUrl": "/uploads/2022/02/e32qsmslxyo.png",
+      "url": "https://poraodorock.com.br"
+    },
+    {
+      "name": "Parceiros e patrocinadores",
+      "group": "regua",
+      "logoUrl": "/uploads/2022/02/regua-atualizada.pdf-4-scaled.png",
+      "url": null
+    },
+    {
+      "name": "Softaliza",
+      "group": "gerenciamento",
+      "logoUrl": "/uploads/2022/09/SOFTALIZA-Rodape.png",
+      "url": "https://ciente.live"
+    }
+  ],
+  "settings": {
+    "site_name": "Porão na Roda",
+    "home_headline": "Conheça a programação dos cursos",
+    "home_about": "O ciclo formativo “Porão na Roda” é uma iniciativa do Festival Porão do Rock voltada ao fortalecimento de trajetórias no campo da música e da produção cultural. A proposta reúne profissionais atuantes no mercado em uma série de encontros dedicados à troca prática e estratégica com artistas e agentes do setor.\nA iniciativa busca ampliar o repertório técnico e a circulação de conhecimento em áreas como curadoria de festivais, gestão de carreira artística e economia da música, internacionalização, com atenção especial à profissionalização de artistas independentes. Ao longo da programação, pretendemos fortalecer capacidades criativas e estratégicas, fomentar redes de colaboração e promover o encontro entre profissionais experientes e artistas em desenvolvimento.",
+    "home_kicker": "Venha conhecer nossos convidados para o Porão na Roda online 2026",
+    "free_note": "Tudo isso na faixa, 0800, free, gratuito, por conta da casa!",
+    "speakers_headline": "Um line up de grandes nomes do mercado",
+    "passo_a_passo": "Para assistir às aulas do Porão na Roda você precisa de um login. Se já tem, basta entrar com o e-mail cadastrado e a senha na área de login.\nEsqueceu a senha? Clique em “Esqueci minha senha” na área de login para redefinir pelo e-mail cadastrado.\nAinda não tem cadastro? Clique em “Inscreva-se”, preencha seus dados e crie sua senha. O acesso é liberado na hora.\nQualquer dúvida sobre o seu login, fale com a gente pelo e-mail de contato.",
+    "contact_email": "contato@poraodorock.com.br",
+    "notify_email": "",
+    "auto_approve": "1",
+    "live_time_default": "19h (horário de Brasília)",
+    "footer_note": "© 2026 Porão na Roda — Todos os direitos reservados",
+    "social_facebook": "https://www.facebook.com/FestivalPoraoDoRock",
+    "social_instagram": "https://www.instagram.com/poraodorock/",
+    "social_x": "https://x.com/poraooficial",
+    "social_youtube": "https://www.youtube.com/@poraodorockoficial",
+    "social_spotify": "https://open.spotify.com/playlist/2KvRyNhvRtn21qwk8UvPFg",
+    "social_tiktok": "https://www.tiktok.com/@festivalporaodorock"
+  }
+}

@@ -1,0 +1,235 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  ADMIN
+  PARTICIPANT
+}
+
+// ACTIVE = pode entrar; PENDING = cadastro aguardando aprovação;
+// BLOCKED = bloqueado pelo admin; REJECTED = solicitação recusada
+enum UserStatus {
+  ACTIVE
+  PENDING
+  BLOCKED
+  REJECTED
+}
+
+enum LectureStatus {
+  SCHEDULED // agendada (mostra data/cronômetro)
+  LIVE      // ao vivo (embed do Zoom)
+  RECORDED  // gravação disponível (Vimeo/YouTube)
+}
+
+// Categorias de usuário (Participante, Palestrante, Organização…)
+model Category {
+  id    String @id @default(cuid())
+  name  String @unique
+  order Int    @default(0)
+}
+
+model User {
+  id            String     @id @default(cuid())
+  name          String
+  email         String     @unique
+  passwordHash  String?    // bcrypt
+  legacyHash    String?    // hash importado do WordPress (phpass $P$ / $wp$2y$) — migrado para bcrypt no 1º login
+  role          Role       @default(PARTICIPANT)
+  status        UserStatus @default(ACTIVE)
+  category      String     @default("Participante")
+  institution   String?
+
+  // Ficha do participante (formulário de inscrição)
+  phone         String?
+  cpf           String?    // opcional — usado no certificado de participação
+  city          String?
+  state         String?    // UF
+  profession    String?    // atuação no mercado (artista, produtor, gestor…)
+
+  source        String?    // wordpress | site | admin | import
+  wpId          Int?       // ID do usuário no WordPress (importação)
+  notes         String?
+
+  createdAt     DateTime   @default(now())
+  updatedAt     DateTime   @updatedAt
+  lastLoginAt   DateTime?
+  approvedAt    DateTime?
+
+  attempts      QuizAttempt[]
+  pageViews     PageView[]
+  events        AuthEvent[]
+  resetTokens   PasswordResetToken[]
+
+  @@index([status])
+  @@index([createdAt])
+}
+
+model PasswordResetToken {
+  id        String    @id @default(cuid())
+  token     String    @unique
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId    String
+  expiresAt DateTime
+  usedAt    DateTime?
+  createdAt DateTime  @default(now())
+}
+
+// Eventos de autenticação/cadastro para as métricas (login, cadastro, aprovação…)
+model AuthEvent {
+  id        String   @id @default(cuid())
+  type      String   // LOGIN | LOGIN_FAIL | REGISTER | APPROVE | REJECT | RESET_REQUEST | RESET_DONE | IMPORT
+  user      User?    @relation(fields: [userId], references: [id], onDelete: SetNull)
+  userId    String?
+  email     String?
+  ip        String?
+  createdAt DateTime @default(now())
+
+  @@index([createdAt])
+  @@index([type])
+}
+
+// Edições do Porão na Roda (2025, 2026…)
+model Edition {
+  id          String    @id @default(cuid())
+  year        Int       @unique
+  name        String
+  slug        String    @unique
+  description String?
+  current     Boolean   @default(false)
+  active      Boolean   @default(true)
+  order       Int       @default(0)
+  lectures    Lecture[]
+}
+
+model Speaker {
+  id       String           @id @default(cuid())
+  name     String
+  slug     String           @unique
+  title    String?          // ex.: Prof. Dr.
+  bio      String?
+  photoUrl String?
+  order    Int              @default(0)
+  active   Boolean          @default(true)
+  lectures LectureSpeaker[]
+}
+
+// Cada live/aula é uma "sala": página privada com player (Zoom ao vivo ou gravação)
+model Lecture {
+  id           String           @id @default(cuid())
+  edition      Edition          @relation(fields: [editionId], references: [id], onDelete: Cascade)
+  editionId    String
+  title        String
+  slug         String           @unique
+  subtitle     String?
+  description  String?
+  date         DateTime?        // dia da live (meia-noite UTC do dia)
+  dateLabel    String?          // texto exibido, ex.: "14/04"
+  timeLabel    String?          // ex.: "19h30 (Brasília)"
+  startsAt     DateTime?        // início exato (para o cronômetro)
+  status       LectureStatus    @default(SCHEDULED)
+  liveUrl      String?          // link do Zoom (ao vivo)
+  recordingUrl String?          // link Vimeo/YouTube (gravação)
+  materials    Json?            // [{ title, url }]
+  order        Int              @default(0)
+  active       Boolean          @default(true)
+  speakers     LectureSpeaker[]
+  questions    QuizQuestion[]
+  attempts     QuizAttempt[]
+
+  @@index([editionId])
+}
+
+model LectureSpeaker {
+  lecture   Lecture @relation(fields: [lectureId], references: [id], onDelete: Cascade)
+  lectureId String
+  speaker   Speaker @relation(fields: [speakerId], references: [id], onDelete: Cascade)
+  speakerId String
+  order     Int     @default(0)
+
+  @@id([lectureId, speakerId])
+}
+
+model QuizQuestion {
+  id          String       @id @default(cuid())
+  lecture     Lecture      @relation(fields: [lectureId], references: [id], onDelete: Cascade)
+  lectureId   String
+  text        String
+  description String?
+  order       Int          @default(0)
+  options     QuizOption[]
+}
+
+model QuizOption {
+  id         String       @id @default(cuid())
+  question   QuizQuestion @relation(fields: [questionId], references: [id], onDelete: Cascade)
+  questionId String
+  text       String
+  correct    Boolean      @default(false)
+  order      Int          @default(0)
+}
+
+model QuizAttempt {
+  id        String   @id @default(cuid())
+  lecture   Lecture  @relation(fields: [lectureId], references: [id], onDelete: Cascade)
+  lectureId String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId    String
+  answers   Json     // { [questionId]: optionId }
+  score     Int?     // acertos (quando há gabarito)
+  total     Int
+  createdAt DateTime @default(now())
+
+  @@index([lectureId])
+  @@index([userId])
+}
+
+// Logos de realização / apoio / gerenciamento
+model Sponsor {
+  id      String  @id @default(cuid())
+  name    String
+  group   String  // realizacao | apoio | gerenciamento | patrocinio
+  logoUrl String
+  url     String?
+  order   Int     @default(0)
+  active  Boolean @default(true)
+}
+
+model FaqItem {
+  id       String  @id @default(cuid())
+  group    String? // Congressistas | Palestrantes
+  question String
+  answer   String
+  order    Int     @default(0)
+}
+
+model Setting {
+  key   String @id
+  value String
+}
+
+// Métricas de acesso (uma linha por visualização de página)
+model PageView {
+  id           String   @id @default(cuid())
+  path         String
+  visitorId    String
+  user         User?    @relation(fields: [userId], references: [id], onDelete: SetNull)
+  userId       String?
+  referrer     String?
+  referrerHost String?
+  country      String?
+  city         String?
+  device       String?  // desktop | mobile | tablet
+  browser      String?
+  os           String?
+  createdAt    DateTime @default(now())
+
+  @@index([createdAt])
+  @@index([path])
+  @@index([visitorId])
+}

@@ -1,0 +1,192 @@
+@import "tailwindcss";
+
+/* Fonte da marca (Meltow), já usada no site antigo — servida de /public/uploads */
+@font-face {
+  font-family: "Meltow";
+  src: url("/uploads/2026/06/MeltowSan300-Regular.ttf") format("truetype");
+  font-weight: 400 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Meltow Rust";
+  src: url("/uploads/2026/06/MeltowSan200-Regular.ttf") format("truetype");
+  font-weight: 400 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  /* Identidade Porão na Roda — preto de festival + acentos vibrantes da arte 2025/2026 */
+  --color-brand-50: #fffde6;
+  --color-brand-100: #fffbb8;
+  --color-brand-200: #fff885;
+  --color-brand-300: #fff54d;
+  --color-brand-400: #fff324;
+  --color-brand-500: #fff100; /* amarelo-sinal, cor principal */
+  --color-brand-600: #e0d400;
+  --color-brand-700: #b3a900;
+  --color-brand-800: #807900;
+  --color-brand-900: #4d4900;
+  --color-brand-950: #2b2900;
+
+  /* Acentos do line-up (cada palestra ganha um) */
+  --color-punk-blue: #0000eb;
+  --color-punk-sky: #0094ef;
+  --color-punk-pink: #ff99ce;
+  --color-punk-orange: #ff5f2f;
+  --color-punk-green: #00b746;
+  --color-punk-purple: #8e00ff;
+  --color-punk-lilac: #d983ff;
+  --color-punk-mint: #b2fcbe;
+
+  /* Neutros claros — usados no painel admin, que continua em tema claro */
+  --color-sand-50: #fafafa;
+  --color-sand-100: #f2f2f2;
+  --color-sand-200: #e6e6e6;
+  --color-sand-300: #d4d4d4;
+  --color-sand-400: #b0b0b0;
+
+  /* Verde de apoio (destaques do admin) */
+  --color-lime-300: #8ef0a4;
+  --color-lime-400: #35d05d;
+  --color-lime-500: #00b746;
+
+  /* Neutros (fundo preto de palco) */
+  --color-ink-50: #f7f7f7;
+  --color-ink-100: #ebebeb;
+  --color-ink-200: #d4d4d4;
+  --color-ink-300: #a8a8a8;
+  --color-ink-400: #787878;
+  --color-ink-500: #525252;
+  --color-ink-600: #3b3b3b;
+  --color-ink-700: #2a2a2a;
+  --color-ink-800: #1a1a1a;
+  --color-ink-900: #111111;
+  --color-ink-950: #000000;
+
+  --font-sans: var(--font-archivo), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-display: "Meltow", var(--font-archivo), ui-sans-serif, system-ui, sans-serif;
+
+  --shadow-soft: 0 10px 30px -12px rgba(0, 0, 0, 0.6);
+  --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.5), 0 8px 24px -12px rgba(0, 0, 0, 0.7);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-ink-950);
+  color: var(--color-ink-50);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  line-height: 1.05;
+  text-transform: uppercase;
+}
+
+::selection {
+  background: var(--color-brand-500);
+  color: #000;
+}
+
+/* Texto multi-linha vindo do admin */
+.prose-uc p + p {
+  margin-top: 0.75rem;
+}
+
+/* Faixa de título em bloco, como na arte do festival */
+.banner-block {
+  display: inline-block;
+  padding: 0.15em 0.45em;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fade-in 0.35s ease-out both;
+}
+
+@keyframes slide-in-right {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.drawer-in {
+  animation: slide-in-right 0.28s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes float-slow {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, -14px, 0);
+  }
+}
+
+.float-slow {
+  animation: float-slow 9s ease-in-out infinite;
+}
+
+@keyframes pulse-dot {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 95, 47, 0.6);
+  }
+  70% {
+    box-shadow: 0 0 0 8px rgba(255, 95, 47, 0);
+  }
+}
+
+.live-dot {
+  animation: pulse-dot 1.6s ease-out infinite;
+}
+
+/* Impressão (relatórios do admin) */
+@media print {
+  body {
+    background: #ffffff;
+    color: #000000;
+  }
+  @page {
+    margin: 14mm 12mm;
+  }
+}
+
+/* Padrão de fundo sutil (grade) */
+.bg-grid {
+  background-image:
+    linear-gradient(to right, rgba(255, 241, 0, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 241, 0, 0.06) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+/* Recorte orgânico usado nos retratos do line-up */
+.blob-mask {
+  border-radius: 46% 54% 52% 48% / 50% 46% 54% 50%;
+}
