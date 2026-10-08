@@ -14,7 +14,7 @@ export default async function PassoAPassoPage() {
     {
       icon: "user-plus",
       title: "Já tem login?",
-      text: "Basta inserir o e-mail cadastrado e a senha na área de login. Esses dados foram enviados por e-mail.",
+      text: "Basta inserir o e-mail cadastrado e a senha na área de login.",
       href: "/login",
       cta: "Ir para o login",
     },
@@ -28,9 +28,9 @@ export default async function PassoAPassoPage() {
     {
       icon: "badge",
       title: "Ainda não tem cadastro?",
-      text: "Se você é cooperado na Unimed, preencha o formulário de solicitação de acesso. Se aprovado, você recebe os dados de login em até 10 dias úteis.",
+      text: "A inscrição é gratuita: preencha nome, telefone e e-mail, crie sua senha e o acesso é liberado na hora.",
       href: "/cadastro",
-      cta: "Solicitar cadastro",
+      cta: "Fazer inscrição",
     },
   ];
 
@@ -38,7 +38,7 @@ export default async function PassoAPassoPage() {
     <PageShell
       eyebrow="Ajuda"
       title="Passo a passo"
-      subtitle="Como acessar os conteúdos do Unimed Class."
+      subtitle="Como acessar as aulas do Porão na Roda."
     >
       <div className="grid gap-5 md:grid-cols-3">
         {steps.map((s) => (

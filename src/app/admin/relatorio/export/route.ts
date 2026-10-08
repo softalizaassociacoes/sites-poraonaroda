@@ -64,7 +64,7 @@ export async function GET(req: NextRequest) {
   return new NextResponse(toCsv(rows), {
     headers: {
       "Content-Type": "text/csv; charset=utf-8",
-      "Content-Disposition": `attachment; filename="relatorio-acessos-unimedclass-${period.de}-a-${period.ate}.csv"`,
+      "Content-Disposition": `attachment; filename="relatorio-acessos-poraonaroda-${period.de}-a-${period.ate}.csv"`,
     },
   });
 }

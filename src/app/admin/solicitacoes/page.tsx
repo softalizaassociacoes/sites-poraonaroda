@@ -40,7 +40,7 @@ export default async function AdminSolicitacoesPage() {
             Solicitações de cadastro <span className="text-lg text-ink-400">({pending.length})</span>
           </h1>
           <p className="mt-1 text-sm text-ink-600">
-            Cooperados que preencheram “Não tenho login e quero me cadastrar”. Aprove para liberar o acesso às salas.
+            Quem preencheu “Não tenho login e quero me cadastrar”. Aprove para liberar o acesso às salas.
           </p>
         </div>
         <form action={adminSetAutoApprove} className="flex items-center gap-3 rounded-2xl border border-ink-100 bg-white px-4 py-3 shadow-card">
@@ -56,7 +56,7 @@ export default async function AdminSolicitacoesPage() {
 
       {!mailConfigured() && (
         <p className="mt-4 rounded-xl border border-lime-400 bg-lime-300/30 px-4 py-3 text-sm text-ink-800">
-          <strong>E-mail automático não configurado.</strong> Ao aprovar, avise o cooperado manualmente (a senha gerada aparece na tela). Para ativar o envio,
+          <strong>E-mail automático não configurado.</strong> Ao aprovar, avise a pessoa manualmente (a senha gerada aparece na tela). Para ativar o envio,
           defina SENDGRID_API_KEY e MAIL_FROM nas variáveis de ambiente.
         </p>
       )}

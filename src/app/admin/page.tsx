@@ -98,7 +98,7 @@ export default async function AdminDashboard() {
               <thead className="border-b border-ink-100 bg-sand-50 text-xs uppercase tracking-wide text-ink-500">
                 <tr>
                   <th className="px-5 py-3">Nome</th>
-                  <th className="px-5 py-3">Singular</th>
+                  <th className="px-5 py-3">Cidade</th>
                   <th className="px-5 py-3">Status</th>
                   <th className="px-5 py-3">Cadastro</th>
                 </tr>

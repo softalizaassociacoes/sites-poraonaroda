@@ -20,7 +20,7 @@ export default async function ContaPage() {
   });
 
   return (
-    <PageShell eyebrow="Área do cooperado" title="Minha conta" subtitle={`Cadastro desde ${dateBr(user.createdAt)}.`} wide>
+    <PageShell eyebrow="Área do participante" title="Minha conta" subtitle={`Cadastro desde ${dateBr(user.createdAt)}.`} wide>
       <div className="grid gap-6 lg:grid-cols-[1.2fr_1fr]">
         <Card className="p-6 md:p-8">
           <h2 className="mb-5 text-xl">Meus dados</h2>

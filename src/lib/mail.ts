@@ -130,7 +130,7 @@ export async function sendRegistrationReceivedEmail(to: string, name: string) {
       "Solicitação recebida",
       `<p>Olá, ${name}.</p>
        <p>Recebemos sua inscrição no Porão na Roda. Ela será analisada pela organização e você receberá um e-mail assim que o acesso for liberado.</p>
-       <p style="color:#727271;font-size:13px">Dúvidas? Escreva para ccmpharma@ccmgroup.com.br.</p>`
+       <p style="color:#727271;font-size:13px">Dúvidas? Fale com a organização do Porão na Roda.</p>`
     ),
   });
 }
@@ -145,7 +145,7 @@ export async function sendWelcomeEmail(to: string, name: string) {
       `<p>Olá, ${name.split(" ")[0]}.</p>
        <p>Sua inscrição no Porão na Roda foi concluída e o seu acesso já está liberado. Use o e-mail <strong>${to}</strong> e a senha que você criou para entrar quando quiser.</p>
        ${button(`${siteUrl()}/programacao`, "Ver a programação das lives")}
-       <p style="color:#727271;font-size:13px">Dúvidas? Escreva para ccmpharma@ccmgroup.com.br.</p>`
+       <p style="color:#727271;font-size:13px">Dúvidas? Fale com a organização do Porão na Roda.</p>`
     ),
   });
 }

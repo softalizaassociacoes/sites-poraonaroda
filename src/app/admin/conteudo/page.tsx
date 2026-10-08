@@ -22,7 +22,7 @@ export default async function AdminConteudoPage() {
             <Checkbox name="auto_approve" defaultChecked={s.auto_approve === "1"} className="mt-0.5" />
             <span>
               <strong>Aprovar cadastros automaticamente.</strong> Desligado, cada solicitação fica pendente até um admin aprovar (fluxo atual, com validação do
-              cooperado).
+              participante).
             </span>
           </label>
           <div className="grid gap-4 sm:grid-cols-2">

@@ -21,7 +21,7 @@ export async function ProgramView({ year }: { year: number | null }) {
         edition?.description ??
         (edition?.current
           ? `Aulas ao vivo às terças-feiras, ${settings.live_time_default}. As gravações ficam disponíveis na plataforma.`
-          : "Reveja as aulas desta edição. As gravações continuam disponíveis para cooperados cadastrados.")
+          : "Reveja as aulas desta edição. As gravações continuam disponíveis para quem está inscrito.")
       }
       wide
     >

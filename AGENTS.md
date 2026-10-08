@@ -11,3 +11,13 @@
 - Datas de 2025: a listagem do WordPress trazia 14/05 e 15/05 trocadas entre Marina Mattoso e Arthur Fitzgibbon. Vale o que está nos banners oficiais (14/05 Marina, 15/05 Arthur), que é o que está no `content.json`.
 - Ficha do participante: `phone`, `cpf`, `city`, `state`, `profession` (atuação) e `institution` (banda/projeto). A inscrição pede nome, sobrenome, telefone, e-mail e senha — o resto é opcional.
 - Importação de usuários: `src/lib/csv.ts` detecta o formato (simples / WordPress / Forminator) e `src/lib/import-users.ts` grava. Hash `$P$` do WP é aceito no login (`src/lib/phpass.ts`).
+
+<!-- BEGIN:nextjs-agent-rules -->
+
+# This is NOT the Next.js you know
+
+This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` (resolved from this file's directory; in monorepos the `next` package may not be visible from the repo root) before writing any code. Heed deprecation notices.
+
+This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
+
+<!-- END:nextjs-agent-rules -->

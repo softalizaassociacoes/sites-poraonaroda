@@ -12,7 +12,7 @@ export async function SpeakersView({ year }: { year: number | null }) {
     <PageShell
       eyebrow={edition ? edition.name : "Palestrantes"}
       title={edition ? `Palestrantes ${edition.year}` : "Palestrantes"}
-      subtitle="Especialistas de referência nas suas áreas, selecionados pela curadoria científica da CCM."
+      subtitle="Um line up de grandes nomes do mercado da música e da produção cultural."
       wide
     >
       <EditionTabs

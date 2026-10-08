@@ -101,7 +101,7 @@ export default async function AdminRelatorioPage({ searchParams }: PageProps<"/a
           </div>
           <h1 className="text-3xl text-ink-900 print:text-2xl">Relatório de acessos</h1>
           <p className="mt-1 text-sm text-ink-600">
-            unimedclass · período de <strong>{periodLabel}</strong> · emitido em {dateTimeBr(new Date())} · páginas do admin não contam
+            poraonaroda · período de <strong>{periodLabel}</strong> · emitido em {dateTimeBr(new Date())} · páginas do admin não contam
           </p>
         </div>
         <div className="flex flex-wrap gap-2 print:hidden">

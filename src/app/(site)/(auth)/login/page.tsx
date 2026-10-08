@@ -21,7 +21,7 @@ function LoginForm() {
       )}
       {next && !state.error && (
         <p className="rounded-xl bg-ink-900 px-3.5 py-2.5 text-sm text-ink-200">
-          Faça login para acessar esta área. O acesso às salas é exclusivo para cooperados cadastrados.
+          Faça login para acessar esta área. As salas são exclusivas para quem está inscrito.
         </p>
       )}
       <div>

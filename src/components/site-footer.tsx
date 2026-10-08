@@ -77,14 +77,14 @@ export async function SiteFooter() {
               return (
                 <div key={g.key}>
                   <p className="mb-4 text-xs font-bold uppercase tracking-[0.2em] text-ink-400">{g.label}</p>
-                  <div className="flex flex-wrap items-center gap-6">
+                  <div className="flex flex-wrap items-center gap-4">
                     {items.map((s) => {
                       const img = (
                         // eslint-disable-next-line @next/next/no-img-element
                         <img
                           src={s.logoUrl}
                           alt={s.name}
-                          className="h-12 w-auto max-w-[200px] object-contain invert"
+                          className="h-10 w-auto max-w-[180px] rounded-lg bg-white px-3 py-2 object-contain"
                           loading="lazy"
                         />
                       );
@@ -135,7 +135,7 @@ export async function SiteFooter() {
             className="flex items-center gap-2 text-ink-500 transition hover:text-ink-200"
           >
             <span>Plataforma</span>
-            <Image src="/softaliza.png" alt="Softaliza" width={278} height={50} className="h-5 w-auto invert" />
+            <Image src="/softaliza.png" alt="Softaliza" width={278} height={50} className="h-5 w-auto" />
           </a>
         </div>
       </div>
